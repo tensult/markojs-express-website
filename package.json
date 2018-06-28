@@ -1,0 +1,29 @@
+{
+  "name": "markojs-customizable-website",
+  "version": "1.0.0",
+  "description": "Example of using MarkoJS for designing highly customizable websites",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tensult/markojs-customizable-website.git"
+  },
+  "keywords": [
+    "markojs",
+    "website",
+    "templates",
+    "widgets"
+  ],
+  "author": "dilip@tensult.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tensult/markojs-customizable-website/issues"
+  },
+  "homepage": "https://github.com/tensult/markojs-customizable-website#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "marko": "^4.11.3"
+  }
+}

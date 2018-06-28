@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dynamically load MarkoJS components</title>
+</head>
+<body>
+    <p>Loading ${data.name}...</p>
+
+    <if(data.name=="foo")>
+        <a href="/dynamic-loading-of-components?component=bar&color=red">Load Bar</a>
+    </if>
+    <else>
+        <a href="/dynamic-loading-of-components?component=foo&color=green">Load Foo</a>
+    </else>
+
+    <load-component name=data.name data=data/>
+</body>
+</html>
