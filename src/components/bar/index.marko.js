@@ -13,7 +13,7 @@ var marko_template = module.exports = require("marko/dist/html").t(__filename),
 function render(input, out, __component, component, state) {
   var data = input;
 
-  out.w("<div class=\"bar-component\"><p>I am bar component</p><p>Colors selected: <span style=\"color:" +
+  out.w("<div class=\"bar-component\"><p>Bar's selected color: <span style=\"color:" +
     marko_escapeXmlAttr(data.color) +
     "\">" +
     marko_escapeXml(data.color) +

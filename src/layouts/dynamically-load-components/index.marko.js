@@ -22,17 +22,17 @@ function render(input, out, __component, component, state) {
   component_globals_tag({}, out);
 
   out.w("<p>Loading " +
-    marko_escapeXml(data.name) +
+    marko_escapeXml(data.componentId) +
     "...</p>");
 
-  if (data.name == "foo") {
-    out.w("<a href=\"/dynamic-loading-of-components?component=bar&amp;color=red\">Load Bar</a>");
+  if (data.componentId == "foo") {
+    out.w("<a href=\"/dynamic-loading-of-components?componentId=bar&amp;color=red\">Load Bar</a>");
   } else {
-    out.w("<a href=\"/dynamic-loading-of-components?component=foo&amp;color=green\">Load Foo</a>");
+    out.w("<a href=\"/dynamic-loading-of-components?componentId=foo&amp;color=green\">Load Foo</a>");
   }
 
   load_component_tag({
-      name: data.name,
+      componentId: data.componentId,
       data: data
     }, out, __component, "8");
 

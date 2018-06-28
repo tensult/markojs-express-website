@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>${data.template.attributes.title}</title>
+</head>
+<body>
+    <h2>Colors Example</h2>
+    <p>We are loading this page using templates and widgets</p>
+    <load-slot slot-name="top" slot-data=data/>
+    <load-slot slot-name="middle" slot-data=data/>
+    <load-slot slot-name="bottom" slot-data=data/>
+    <ul>
+    <li>
+        <a href="/colors/red">Enter into Red World</a>
+    </li>
+    <li>
+        <a href="/colors/green">Enter into green World</a>
+    </li>
+    <li>
+        <a href="/colors/blue">Enter into Blue World</a>
+    </li>
+    <li>
+        <a href="/colors/mix">Enter into colorful World</a>
+    </li>
+    </ul>
+</body>
+</html>
