@@ -1,5 +1,5 @@
 # markojs-express-website
-We can design highly customizable websites with MarkoJS.
+We are showing how to design highly customizable websites with MarkoJS.
 ## To Start
 ```
 npm install
@@ -11,7 +11,7 @@ Component is a plugable, configurable and custom HTML tag. It will be written in
 
 In this project we will be writing our components in the [components](https://github.com/tensult/markojs-express-website/blob/master/src/components) directory.
 
-The following are special components which support dynamic loading of components based different use cases. Please note these themselves shouldn't be loaded dynamically else it will be a infinite loop.
+The following are special components using which we can load components dynamically based different use cases. Please note these themselves shouldn't be loaded dynamically else it will be a infinite loop.
 
 #### [load-component](https://github.com/tensult/markojs-express-website/blob/master/src/components/load-component/index.js)
 This loads component by name so we can simply pass the name of the component we want to load from [components](https://github.com/tensult/markojs-express-website/blob/master/src/components/index.js)
