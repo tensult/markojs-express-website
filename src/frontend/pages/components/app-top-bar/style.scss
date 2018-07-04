@@ -1,0 +1,7 @@
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+.mdc-top-app-bar {
+    @include mdc-top-app-bar-fill-color(teal);
+    @include mdc-top-app-bar-ink-color(white);
+    @include mdc-top-app-bar-icon-ink-color(white);
+  }

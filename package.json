@@ -23,7 +23,17 @@
   },
   "homepage": "https://github.com/tensult/markojs-customizable-website#readme",
   "dependencies": {
+    "@lasso/marko-taglib": "^1.0.10",
+    "@material/button": "^0.37.0",
+    "@material/drawer": "^0.36.1",
+    "@material/layout-grid": "^0.34.0",
+    "@material/ripple": "^0.37.0",
+    "@material/top-app-bar": "^0.37.0",
     "express": "^4.16.3",
-    "marko": "^4.11.3"
+    "lasso": "^3.2.0",
+    "lasso-marko": "^2.4.2",
+    "lasso-sass": "^3.0.0",
+    "marko": "^4.11.3",
+    "serve-static": "^1.13.2"
   }
 }
