@@ -1,0 +1,5 @@
+{
+    "dependencies":[
+        {"path":"@material/drawer/dist/mdc.drawer.js"}
+    ]
+}
