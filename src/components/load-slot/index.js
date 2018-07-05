@@ -5,7 +5,7 @@ module.exports = function (input, out) {
     const slotName = input.slotName;
     const template = slotData.template;
     const widgetsMap = slotData.widgetsMap;
-   
+
     const widgetId = getWidgetId(template, slotName);
     if (!widgetId || !widgetsMap[widgetId]) {
         console.error(`No widget found for slotName=${slotName}`);
@@ -22,11 +22,11 @@ module.exports = function (input, out) {
     } else {
         out.write(`<div class='${slotName}'>`);
         out.write(`<div class='${widgetObject.componentId}'>`);
-        try {
-            components[widgetObject.componentId].render(widgetAttributes, out);
-        } catch (err) {
-            console.error(`Error occurred while loading widgetName=${widgetObject.componentId}`, err);
-        }
+        components[widgetObject.componentId]
+            .render(widgetAttributes, out)
+            .catch((err) => {
+                console.error(`Error occurred while rendering widgetName=${widgetObject.componentId}`, err);
+            });
         out.write('</div>');
         out.write('</div>');
     }
