@@ -1,0 +1,14 @@
+$ var getColor = function(color){
+    return new Promise((resolve, reject) => {
+        setTimeout(function() {
+            // create failure
+            reject(color);
+        }, 1000);
+    });
+}
+<await(color from getColor(data.color))>
+    <!-- this won't load as promise is rejected -->
+    <div class="asyncfailure-component">
+        <p>asynccomp's selected color: <span style="color:${color}">${color}</span></p>
+    </div>
+</await>

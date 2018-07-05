@@ -16,11 +16,12 @@ $ function filterLoadedComponent(componentIds, loadedComponetId) {
 $ const colors = ['red', 'green', 'blue'];
 
 $ const components = require('../../components');
-<ul>
-    <li for(componentId in filterLoadedComponent(Object.keys(components), data.componentId) | status-var=loop)>
-            <a href="/dynamic-loading-of-components?componentId=${componentId}&color=${colors[loop.getIndex() % colors.length]}">Load ${componentId}</a>
-    </li>
-</ul>
+    <ul>
+        <li for(componentId in filterLoadedComponent(Object.keys(components), data.componentId) | status-var=loop)>
+                <a href="/dynamic-loading-of-components?componentId=${componentId}&color=${colors[loop.getIndex() % colors.length]}">Load ${componentId}</a>
+        </li>
+    </ul>
+    <p style="color:orange">NOTE: asyncfailure component won't load, that is intentional, to see what happens when one component fails </p>
     <load-component component-id=data.componentId data=data/>
 </body>
 </html>
