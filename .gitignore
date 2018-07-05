@@ -64,3 +64,6 @@ typings/
 *.marko.js
 .cache
 static
+
+# Mac related
+.DS_Store
