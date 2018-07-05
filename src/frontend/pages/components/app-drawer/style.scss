@@ -1,0 +1,8 @@
+@import "@material/drawer/mdc-drawer";
+
+.mdc-drawer {
+    @include mdc-drawer-fill-color(teal);
+    @include mdc-drawer-ink-color(white);
+    @include mdc-drawer-scrim-color(white, 0.8);
+    
+  }

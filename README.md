@@ -5,6 +5,13 @@ We are showing how to design highly customizable websites with [MarkoJS](https:/
 npm install
 npm start
 ```
+
+## To Start server with lassojs example
+```
+npm install
+node src/app.js
+```
+
 ## Main concepts
 ### Component
 Component is a plugable, configurable and custom HTML tag. It will be written in [marko template syntax](https://markojs.com/docs/syntax/) and it will have extension ".marko". Component is independent portion of the web page which upon execution generates some HTML and gets embedded into the page. We can use same component with several widgets to get different output.
