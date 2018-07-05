@@ -7,13 +7,20 @@
 <body>
     <p>Loading ${data.componentId}...</p>
 
-    <if(data.componentId=="foo")>
-        <a href="/dynamic-loading-of-components?componentId=bar&color=red">Load Bar</a>
-    </if>
-    <else>
-        <a href="/dynamic-loading-of-components?componentId=foo&color=green">Load Foo</a>
-    </else>
+$ function filterLoadedComponent(componentIds, loadedComponetId) {
+    return componentIds.filter((componentId) => {
+        return componentId !== loadedComponetId;
+    });
+}
 
+$ const colors = ['red', 'green', 'blue'];
+
+$ const components = require('../../components');
+<ul>
+    <li for(componentId in filterLoadedComponent(Object.keys(components), data.componentId) | status-var=loop)>
+            <a href="/dynamic-loading-of-components?componentId=${componentId}&color=${colors[loop.getIndex() % colors.length]}">Load ${componentId}</a>
+    </li>
+</ul>
     <load-component component-id=data.componentId data=data/>
 </body>
 </html>
