@@ -34,10 +34,13 @@ let app = express();
 
 app.use('/static', serveStatic('static'));
 
+app.get('/', (req, res) => {
+    res.redirect("/lasso-components");
+});
 app.get('/lasso-components',login.loginPage);
 const port = 8000
 let server = app.listen(port, () => {
-    console.log('server started at port', port);
+    console.log("http://localhost:" + port);
     if (process.send) {
         process.send('online');
     }

@@ -1,5 +1,7 @@
 # markojs-express-website
 We are showing how to design highly customizable websites with [MarkoJS](https://markojs.com/).
+## Prerequisites
+* NodeJS >= 8.10
 ## To Start
 ```
 npm install
