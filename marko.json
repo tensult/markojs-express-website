@@ -1,3 +1,4 @@
 {
-    "tags-dir": ["./src/components", "./src/layouts"]
+    "tags-dir": ["./src/components", "./src/layouts"],
+    "<my-tag>": {"html": true}
 }
