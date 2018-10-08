@@ -15,6 +15,8 @@ node src/app.js
 ```
 
 ## Main concepts
+### Architecture
+![Architecture](https://user-images.githubusercontent.com/33080863/46595657-2289f700-caf7-11e8-9297-4320cef9d04e.png)
 ### Component
 Component is a plugable, configurable and custom HTML tag. It will be written in [marko template syntax](https://markojs.com/docs/syntax/) and it will have extension ".marko". Component is independent portion of the web page which upon execution generates some HTML and gets embedded into the page. We can use same component with several widgets to get different output.
 
