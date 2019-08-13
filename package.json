@@ -33,7 +33,7 @@
     "lasso": "^3.2.0",
     "lasso-marko": "^2.4.2",
     "lasso-sass": "^3.0.0",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.15",
     "marko": "^4.11.3",
     "serve-static": "^1.13.2"
   }
