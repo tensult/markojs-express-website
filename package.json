@@ -29,7 +29,7 @@
     "@material/layout-grid": "^0.34.0",
     "@material/ripple": "^0.37.0",
     "@material/top-app-bar": "^0.37.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "lasso": "^3.2.0",
     "lasso-marko": "^2.4.2",
     "lasso-sass": "^3.0.0",
